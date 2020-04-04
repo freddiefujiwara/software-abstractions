@@ -1,3 +1,4 @@
+![CI](https://github.com/freddiefujiwara/software-abstractions/workflows/CI/badge.svg)
 # software-abstractions
 My personal Alloy practice repository
 
