@@ -18,6 +18,8 @@ fun lookup (b: Book, n: Name): set Addr{
   n.(b.addr)
 }
 assert delUndoesAdd {
-  all b,b',b'' : Book, n: Name , a :Addr | add[b,b',n,a] and del[b',b,n] implies b.addr = b''.addr
+  all b,b',b'' : Book, n: Name , a :Addr |
+ no n.(b.addr) and add[b,b',n,a] and del[b',b'',n]
+ implies b.addr = b''.addr
 }
 check delUndoesAdd for 3
