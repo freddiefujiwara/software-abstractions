@@ -11,4 +11,4 @@ pred showAdd (b,b': Book, n: Name, a:Addr){
 pred add (b,b': Book, n: Name, a:Addr){
   b'.addr = b.addr + n -> a
 }
-run showAdd for 3 but 2 Book
+run showAdd for 3 but 3 Book
