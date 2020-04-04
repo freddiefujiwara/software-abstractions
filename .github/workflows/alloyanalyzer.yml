@@ -28,5 +28,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Complile
-      run: java -cp org.alloytools.alloy.dist.jar edu.mit.csail.sdg.alloy4whole.ExampleUsingTheCompiler 2-a-whirlwind-tour/2-1-statics-exploring-stat
-es/2.1.1.als
+      run: sh ./compile.sh
